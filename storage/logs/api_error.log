@@ -1,0 +1,2 @@
+[2024-04-22 20:19:25] local.INFO: Someone tried to access our API with false credentials, token they used: {"access_token":"123457"} 
+[2024-04-22T20:38:48.556333+05:30], Someone tried to access our API with false credentials, token they used: {"access_token":"123457dsd"}[2024-04-22T20:41:29.564849+05:30], [%line%] Someone tried to access our API with false credentials, token they used: {"access_token":"123457dsd"}
