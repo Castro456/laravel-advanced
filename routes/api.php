@@ -19,9 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/users', [AdminAPIController::class, 'list_all_users'])->name('list/users');
-
-Route::post('/create-users', [AdminAPIController::class, 'create_users'])->name('create/users');
-
-Route::delete('/delete-users/{user_id}', [AdminAPIController::class, 'delete_users'])->name('delete/users');
+Route::group(['middleware' => 'admin', 'prefix' => 'admin'], function(){
+    Route::get('/', [AdminAPIController::class, 'list_all_admins']);
+    
+    Route::post('/create', [AdminAPIController::class, 'create_admin']);
+    
+    Route::delete('/delete-admin/{admin_id}', [AdminAPIController::class, 'delete_admin']);
+});
 

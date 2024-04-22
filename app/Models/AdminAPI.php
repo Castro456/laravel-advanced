@@ -14,6 +14,5 @@ class AdminAPI extends Model
         'name',
         'email',
         'password',
-        'image',
     ];
 }
