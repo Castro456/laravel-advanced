@@ -2400,3 +2400,240 @@ Did you mean one of these?
 #42 {main}
 "} 
 [2024-04-22 20:36:01] laravel.INFO: Someone tried to access our API with false credentials, token they used: {"access_token":"123457"} 
+[2024-04-22 20:50:42] local.INFO: Run a task every minute  
+[2024-04-22 20:55:55] local.INFO: Run a task every minute  
+[2024-04-23 01:24:15] local.ERROR: Command "make:queue-table" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:queue-table\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view at /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php:737)
+[stacktrace]
+#0 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find()
+#1 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#2 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#3 /var/www/html/Projects/laravel-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 {main}
+"} 
+[2024-04-23 01:39:00] local.ERROR: Command "make:queue-table" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:queue-table\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view at /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php:737)
+[stacktrace]
+#0 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find()
+#1 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#2 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#3 /var/www/html/Projects/laravel-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 {main}
+"} 
+[2024-04-23 01:54:11] local.ERROR: failed {"exception":"[object] (Exception(code: 0): failed at /var/www/html/Projects/laravel-api/app/Jobs/SlowJob.php:33)
+[stacktrace]
+#0 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Jobs\\SlowJob->handle()
+#1 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#3 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#4 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#5 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#6 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#7 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#9 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#10 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#11 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then()
+#13 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#14 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call()
+#15 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(439): Illuminate\\Queue\\Jobs\\Job->fire()
+#16 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(389): Illuminate\\Queue\\Worker->process()
+#17 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(176): Illuminate\\Queue\\Worker->runJob()
+#18 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(138): Illuminate\\Queue\\Worker->daemon()
+#19 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(121): Illuminate\\Queue\\Console\\WorkCommand->runWorker()
+#20 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#21 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#25 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /var/www/html/Projects/laravel-api/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute()
+#27 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(181): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run()
+#29 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#31 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#32 /var/www/html/Projects/laravel-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+"} 
+[2024-04-23 01:54:11] local.ERROR: failed {"exception":"[object] (Exception(code: 0): failed at /var/www/html/Projects/laravel-api/app/Jobs/SlowJob.php:33)
+[stacktrace]
+#0 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Jobs\\SlowJob->handle()
+#1 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#3 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#4 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#5 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#6 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#7 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#9 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#10 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#11 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then()
+#13 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#14 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call()
+#15 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(439): Illuminate\\Queue\\Jobs\\Job->fire()
+#16 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(389): Illuminate\\Queue\\Worker->process()
+#17 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(176): Illuminate\\Queue\\Worker->runJob()
+#18 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(138): Illuminate\\Queue\\Worker->daemon()
+#19 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(121): Illuminate\\Queue\\Console\\WorkCommand->runWorker()
+#20 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#21 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#25 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /var/www/html/Projects/laravel-api/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute()
+#27 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(181): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run()
+#29 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#31 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#32 /var/www/html/Projects/laravel-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+"} 
+[2024-04-23 01:54:11] local.ERROR: failed {"exception":"[object] (Exception(code: 0): failed at /var/www/html/Projects/laravel-api/app/Jobs/SlowJob.php:33)
+[stacktrace]
+#0 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Jobs\\SlowJob->handle()
+#1 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#3 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#4 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#5 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#6 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#7 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#9 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(124): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#10 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#11 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(126): Illuminate\\Pipeline\\Pipeline->then()
+#13 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#14 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call()
+#15 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(439): Illuminate\\Queue\\Jobs\\Job->fire()
+#16 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(389): Illuminate\\Queue\\Worker->process()
+#17 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Worker.php(176): Illuminate\\Queue\\Worker->runJob()
+#18 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(138): Illuminate\\Queue\\Worker->daemon()
+#19 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php(121): Illuminate\\Queue\\Console\\WorkCommand->runWorker()
+#20 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#21 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#25 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#26 /var/www/html/Projects/laravel-api/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute()
+#27 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(181): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run()
+#29 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /var/www/html/Projects/laravel-api/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#31 /var/www/html/Projects/laravel-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#32 /var/www/html/Projects/laravel-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 {main}
+"} 

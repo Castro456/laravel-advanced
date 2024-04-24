@@ -1,6 +1,7 @@
 <?php
 
 use App\Logging\ApiLogFormat;
+use App\Logging\CronLogFormat;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -132,6 +133,13 @@ return [
             'driver' => 'single',
             'tap' => [ApiLogFormat::class],
             'path' => storage_path('logs/api_error.log'),
+            'level' => 'debug'
+        ],
+
+        'cron_jobs' => [
+            'driver' => 'single',
+            'tap' => [CronLogFormat::class],
+            'path' => storage_path('logs/cron_job.log'),
             'level' => 'debug'
         ],
     ],
